@@ -130,7 +130,7 @@
                 
 				
                     <div class="site-heading"  style="padding:40px">
-                        <h1>Hexo</h1>
+                        <h1>Touch The Fish</h1>
                         <!--<hr class="small">-->
                         <span class="subheading"></span>
                     </div>
@@ -161,7 +161,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Hexo</a>
+            <a class="navbar-brand" href="/">Touch The Fish</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -174,7 +174,7 @@
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a  href="/">Homepage</a>
+                        <a  href="/">主页</a>
                     </li>
 		    
                     
@@ -258,9 +258,24 @@
                  <li >
                     12-12
                     <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/2019/12/12/hello-world/" style="color: #0085a1">
+                    <a href="/2019/12/12/README/" style="color: #0085a1">
                         <span>
-                            Hello ����World
+                            README
+                        </span>
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </li>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <li >
+                    12-12
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <a href="/2019/12/12/摸鱼/" style="color: #0085a1">
+                        <span>
+                            摸鱼
                         </span>
                     </a>
                     <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
@@ -294,7 +309,7 @@
 
 <section>
     <!-- no hr -->
-    <h5><a href="/tags/">Tags</a></h5>
+    <h5><a href="/tags/">标签云</a></h5>
     <div class="tags">
         
     </div>
@@ -305,7 +320,7 @@
     
         <!-- Short About -->
 <section class="visible-md visible-lg">
-    <h5><a href="/about/">About me</a></h5>
+    <h5><a href="/about/">关于</a></h5>
     <div class="short-about">
 
         
@@ -313,7 +328,7 @@
         
 
         
-            <p>某不知名的中学生是也</p>
+            <p>退役敲代码的李哥</p>
         
 
         <!-- SNS Link -->
@@ -337,12 +352,16 @@
         <hr>
     
         
-  <h5>Recent posts</h3>
+  <h5>最近发表</h3>
   <div class="widget">
     <ul>
       
         <li>
-          <a href="/2019/12/12/hello-world/">Hello ����World</a>
+          <a href="/2019/12/12/README/">README</a>
+        </li>
+      
+        <li>
+          <a href="/2019/12/12/%E6%91%B8%E9%B1%BC/">摸鱼</a>
         </li>
       
     </ul>
@@ -351,20 +370,24 @@
         <hr>
     
         
-    <h5>Achives</h5>
+    <h5>归档</h5>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">2</span></li></ul>
     </div>
 
         <hr>
     
         <!-- Friends Blog -->
 
-<h5>Friends</h5>
+<h5>友链</h5>
 <ul class="list-inline">
 
     
-        <li><a href="https://blog.xiao-gy.tk" target="_blank">xiao-gy&#39;s blog</a></li>
+        <li><a href="https://me.csdn.net/qq_37493888" target="_blank">超哥碉堡了</a></li>
+    
+        <li><a href="" target="_blank">神奇的菊花怪</a></li>
+    
+        <li><a href="" target="_blank">杰哥是不是来康康</a></li>
     
 </ul>
 
@@ -414,7 +437,7 @@
                         var now = new Date();
 
                         function createtime() {
-                            var grt = new Date("04/30/2019 00:00:00"); //此处修改你的建站时间或者网站上线时间
+                            var grt = new Date("12/12/2019 00:00:00"); //此处修改你的建站时间或者网站上线时间
                             now.setTime(now.getTime() + 250);
                             days = (now - grt) / 1000 / 60 / 60 / 24;
                             dnum = Math.floor(days);
@@ -433,25 +456,25 @@
                             if (String(snum).length == 1) {
                                 snum = "0" + snum;
                             }
-                            document.getElementById("timeDate").innerHTML = "站长已安全摸鱼 " + dnum + " 天 ";
+                            document.getElementById("timeDate").innerHTML = "李哥已摸鱼 " + dnum + " 天 ";
                             document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
                         }
                         setInterval("createtime()", 250);
                     </script>
 
                     <br>
-                    Copyright &copy; John Doe 2019
+                    Copyright &copy; PandaFlower 2019
                     <br>
-                    Powered by <a href="http://www.hexo.io" target="_blank" rel="noopener">Hexo</a>
+                    Powered by <a href="https://me.csdn.net/qq_37493888" target="_blank" rel="noopener">超哥碉堡了</a>
                     <span style="display: inline-block; margin: 0 5px;">
                         <i class="fa fa-heart"></i>
                     </span>
-                    Theme by <a href="https://github.com/kinggozhang/hexo-theme-ace" target="_blank" rel="noopener">ACE</a>
+                    Theme by <a href="https://me.csdn.net/qq_37493888" target="_blank" rel="noopener">超哥碉堡了</a>
                     
                     <span style="display: inline-block; margin: 0 5px;">
                         <i class="fa fa-heart"></i>
                     </span>
-                    Modify by <a href="https://gitee.com/haotong666/hexo-theme-Eternal-night" target="_blank" rel="noopener">Eternal night</a>
+                    Modify by <a href="">PandaFlower</a>
                 </p>
             </div>
         </div>
