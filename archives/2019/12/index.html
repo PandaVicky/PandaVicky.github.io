@@ -82,6 +82,14 @@
     <![endif]-->
 
 
+    <!-- not work in footer :(-->
+	
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+
+	
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+
     <!-- ga & ba script hoook -->
     <script></script>
 
@@ -256,9 +264,24 @@
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
                  <li >
-                    12-12
+                    12-13
                     <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/2019/12/12/自建项目前端搭建/" style="color: #0085a1">
+                    <a href="/2019/12/13/LOL游记/" style="color: #0085a1">
+                        <span>
+                            LOL游记
+                        </span>
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </li>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <li >
+                    12-13
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <a href="/2019/12/13/自建项目前端搭建/" style="color: #0085a1">
                         <span>
                             自建项目前端搭建
                         </span>
@@ -313,7 +336,7 @@
     <div class="tags">
         
             
-            <a href="/tags/摸鱼" title="摸鱼" rel="1">摸鱼</a>
+            <a href="/tags/摸鱼" title="摸鱼" rel="2">摸鱼</a>
             
         
     </div>
@@ -361,7 +384,11 @@
     <ul>
       
         <li>
-          <a href="/2019/12/12/%E8%87%AA%E5%BB%BA%E9%A1%B9%E7%9B%AE%E5%89%8D%E7%AB%AF%E6%90%AD%E5%BB%BA/">自建项目前端搭建</a>
+          <a href="/2019/12/13/LOL%E6%B8%B8%E8%AE%B0/">LOL游记</a>
+        </li>
+      
+        <li>
+          <a href="/2019/12/13/%E8%87%AA%E5%BB%BA%E9%A1%B9%E7%9B%AE%E5%89%8D%E7%AB%AF%E6%90%AD%E5%BB%BA/">自建项目前端搭建</a>
         </li>
       
         <li>
@@ -376,7 +403,7 @@
         
     <h5>归档</h5>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">3</span></li></ul>
     </div>
 
         <hr>
@@ -567,6 +594,53 @@
             $('#tag_cloud a').tagcloud();
         })
     }
+</script>
+
+<script>
+    if (!AV.applicationId) {
+        AV.init({
+            appId: '2V0ap78xzrtM9BWiRS1SyQ4a-gzGzoHsz',
+            appKey: 'wwgnWUUiRLyLKsTtbDKrGOJw'
+        });
+    }
+
+    function createNewCounter() {
+        // 声明一个 Counter 类型
+        var Counter = AV.Object.extend('Counter');
+        // 新建一个 Counter 对象
+        var counter = new Counter();
+        console.log(document.URL);
+        counter.set('title', document.URL);
+        counter.set('counter', 0);
+        counter.save().then(function (counter) {
+            // 成功保存之后，执行其他逻辑.
+            console.log('New object created with objectId: ' + counter.id);
+        }, function (error) {
+            // 异常处理
+            console.error('Failed to create new object, with error message: ' + error.message);
+        });
+    }
+
+    function showPageView() {
+        var query = new AV.Query('Counter');
+        query.equalTo('title', document.URL);
+        query.find().then(function (results) {
+            if (results.length > 0) {
+                var cnt = results[0].get('counter');
+                results[0].increment('counter');
+                results[0].save().then(function (counter) { });
+                document.getElementById('leancounter').innerHTML = '' + (cnt + 1);
+            } else {
+                createNewCounter();
+                document.getElementById('leancounter').innerHTML = 1;
+            }
+        }, function (error) {
+
+            console.error('Failed to find object, with error message: ' + error.message);
+        });
+
+    }
+    showPageView();
 </script>
 
 <!--fastClick.js -->

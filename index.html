@@ -82,6 +82,14 @@
     <![endif]-->
 
 
+    <!-- not work in footer :(-->
+	
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+
+	
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+
     <!-- ga & ba script hoook -->
     <script></script>
 
@@ -239,7 +247,41 @@
 
 
 <div class="w3-row-padding">
-	<a href="/2019/12/12/自建项目前端搭建/">
+	<a href="/2019/12/13/LOL游记/">
+        <h2 class="post-title">
+            LOL游记
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+	</a>
+<div class="w3-quarter">
+
+<a href="/2019/12/13/LOL游记/"><img class="w3-image" id="myPicture" style='width:80px'></a>
+
+</div>
+<div class="w3-threequarter">
+
+    <a href="/2019/12/13/LOL游记/">
+
+        <div class="post-content-preview">
+            LOL半年了，一直玩人机！一天我表哥来我家玩LOL，我十分得意的给他说我现在简单人机把把都超神了，牛吧！表哥呵呵一笑问：你现在什么段位了！什么段位？我懵了！段位是什么东西？是说的等级吗？我已经三十级满级了！表哥得意了:‘’哈哈，段位都不知道，还装NB！我告诉你吧！等级在LOL里并不是评定实力的标准，段位才是，满级满大街都是！像你这种人机称帝的只能算入门级的！只有进入段位界进入青铜领域才.........
+        </div>
+    </a>
+    
+        <p class="post-meta">
+            Posted by PandaFlower on
+            2019-12-13
+        </p>
+    
+
+</div>
+</div>
+<hr>
+
+
+<div class="w3-row-padding">
+	<a href="/2019/12/13/自建项目前端搭建/">
         <h2 class="post-title">
             自建项目前端搭建
         </h2>
@@ -249,27 +291,26 @@
 	</a>
 <div class="w3-quarter">
 
-<a href="/2019/12/12/自建项目前端搭建/"><img src="https://images.weserv.nl/?url=https://images.gitee.com/uploads/images/2019/0507/165606_dd919529_1639482.png" style='width:100%'></a>
+<a href="/2019/12/13/自建项目前端搭建/"><img src="https://images.weserv.nl/?url=https://images.gitee.com/uploads/images/2019/0507/165606_dd919529_1639482.png" style='width:100%'></a>
 
 </div>
 <div class="w3-threequarter">
 
-    <a href="/2019/12/12/自建项目前端搭建/">
+    <a href="/2019/12/13/自建项目前端搭建/">
 
         <div class="post-content-preview">
-            tags:摸鱼
-一、前端环境搭建1、node在 nodejs官网下载最新版稳定版的node.js安装，自带了npm工具 
+            一、前端环境搭建1、node在 nodejs官网下载最新版稳定版的node.js安装，自带了npm工具 
 
 安装后，在cmd中输入node -v  npm-v 出现版本号说明配置成功
 
 2、cnpmnpm是node包管理器，因为npm安装插件是从国外服务器下载，受网络影响大，可能出现异常，全局设置cnpm命令，用cpnm代替npm。
-1npm install -g cn.........
+1npm install -g cnpm --reg.........
         </div>
     </a>
     
         <p class="post-meta">
             Posted by PandaFlower on
-            2019-12-12
+            2019-12-13
         </p>
     
 
@@ -355,7 +396,7 @@ function choosePic() {
     <div class="tags">
         
             
-            <a href="/tags/摸鱼" title="摸鱼" rel="1">摸鱼</a>
+            <a href="/tags/摸鱼" title="摸鱼" rel="2">摸鱼</a>
             
         
     </div>
@@ -403,7 +444,11 @@ function choosePic() {
     <ul>
       
         <li>
-          <a href="/2019/12/12/%E8%87%AA%E5%BB%BA%E9%A1%B9%E7%9B%AE%E5%89%8D%E7%AB%AF%E6%90%AD%E5%BB%BA/">自建项目前端搭建</a>
+          <a href="/2019/12/13/LOL%E6%B8%B8%E8%AE%B0/">LOL游记</a>
+        </li>
+      
+        <li>
+          <a href="/2019/12/13/%E8%87%AA%E5%BB%BA%E9%A1%B9%E7%9B%AE%E5%89%8D%E7%AB%AF%E6%90%AD%E5%BB%BA/">自建项目前端搭建</a>
         </li>
       
         <li>
@@ -418,7 +463,7 @@ function choosePic() {
         
     <h5>归档</h5>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">3</span></li></ul>
     </div>
 
         <hr>
@@ -609,6 +654,53 @@ function choosePic() {
             $('#tag_cloud a').tagcloud();
         })
     }
+</script>
+
+<script>
+    if (!AV.applicationId) {
+        AV.init({
+            appId: '2V0ap78xzrtM9BWiRS1SyQ4a-gzGzoHsz',
+            appKey: 'wwgnWUUiRLyLKsTtbDKrGOJw'
+        });
+    }
+
+    function createNewCounter() {
+        // 声明一个 Counter 类型
+        var Counter = AV.Object.extend('Counter');
+        // 新建一个 Counter 对象
+        var counter = new Counter();
+        console.log(document.URL);
+        counter.set('title', document.URL);
+        counter.set('counter', 0);
+        counter.save().then(function (counter) {
+            // 成功保存之后，执行其他逻辑.
+            console.log('New object created with objectId: ' + counter.id);
+        }, function (error) {
+            // 异常处理
+            console.error('Failed to create new object, with error message: ' + error.message);
+        });
+    }
+
+    function showPageView() {
+        var query = new AV.Query('Counter');
+        query.equalTo('title', document.URL);
+        query.find().then(function (results) {
+            if (results.length > 0) {
+                var cnt = results[0].get('counter');
+                results[0].increment('counter');
+                results[0].save().then(function (counter) { });
+                document.getElementById('leancounter').innerHTML = '' + (cnt + 1);
+            } else {
+                createNewCounter();
+                document.getElementById('leancounter').innerHTML = 1;
+            }
+        }, function (error) {
+
+            console.error('Failed to find object, with error message: ' + error.message);
+        });
+
+    }
+    showPageView();
 </script>
 
 <!--fastClick.js -->

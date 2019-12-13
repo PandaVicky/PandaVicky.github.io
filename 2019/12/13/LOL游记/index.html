@@ -15,11 +15,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          自建项目前端搭建 - null
+          LOL游记 - null
         
     </title>
 
-    <link rel="canonical" href="http://yoursite.com/2019/12/12/自建项目前端搭建/">
+    <link rel="canonical" href="http://yoursite.com/2019/12/13/LOL游记/">
 
     <!-- Bootstrap Core CSS -->
 
@@ -82,6 +82,14 @@
     <![endif]-->
 
 
+    <!-- not work in footer :(-->
+	
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+
+	
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+
     <!-- ga & ba script hoook -->
     <script></script>
 
@@ -131,12 +139,14 @@
                     <div class="post-heading" style="padding:40px">
                         <div class="tags">
                             
+                              <a class="tag" href="/tags/摸鱼" title="摸鱼">摸鱼</a>
+                            
                         </div>
-                        <h1>自建项目前端搭建</h1>
+                        <h1>LOL游记</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by PandaFlower on
-                            2019-12-12
+                            2019-12-13
                         </span>
                     </div>
                 
@@ -235,40 +245,7 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <p>tags:摸鱼</p>
-<h1 id="一、前端环境搭建"><a href="#一、前端环境搭建" class="headerlink" title="一、前端环境搭建"></a>一、前端环境搭建</h1><h2 id="1、node"><a href="#1、node" class="headerlink" title="1、node"></a>1、node</h2><p>在 <a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">nodejs官网</a>下载最新版稳定版的node.js安装，自带了npm工具 </p>
-<p><img src="https://images.weserv.nl/?url=https://images.gitee.com/uploads/images/2019/0507/165606_dd919529_1639482.png" alt=""></p>
-<p>安装后，在cmd中输入node -v  npm-v 出现版本号说明配置成功</p>
-<p><img src="https://images.weserv.nl/?url=https://qqadapt.qpic.cn/txdocpic/0/6303bb6a9321d1e429632f41bd4917c5/0" alt=""></p>
-<h2 id="2、cnpm"><a href="#2、cnpm" class="headerlink" title="2、cnpm"></a>2、cnpm</h2><p>npm是node包管理器，因为npm安装插件是从国外服务器下载，受网络影响大，可能出现异常，全局设置cnpm命令，用cpnm代替npm。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-
-<p>大约2分钟</p>
-<h2 id="3、vue-cli"><a href="#3、vue-cli" class="headerlink" title="3、vue-cli"></a>3、vue-cli</h2><p>vue-cli是vue脚手架工具，方便打包，部署，测试等。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g vue-cli</span><br></pre></td></tr></table></figure>
-
-<p>大于安装2分钟，查看是否安装成功</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue</span><br></pre></td></tr></table></figure>
-
-
-<p><img src="https://images.weserv.nl/?url=https://qqadapt.qpic.cn/txdocpic/0/fabee6ed23c64571ca50a4d85c2b755e/0" alt=""></p>
-<h2 id="4、yarn"><a href="#4、yarn" class="headerlink" title="4、yarn"></a>4、yarn</h2><p>yarn和npm也是包管理器，但yarn比npm更好用。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g yarn</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="5、项目依赖"><a href="#5、项目依赖" class="headerlink" title="5、项目依赖"></a>5、项目依赖</h2><p>从码云上导出项目</p>
-<p>注意：下面两条命令进入<em>项目根目录</em> 运行</p>
-<p><img src="https://images.weserv.nl/?url=https://images.gitee.com/uploads/images/2019/0507/165601_d388d509_1639482.png" alt="输入图片说明" title="屏幕截图.png"><br><strong>下载依赖</strong></p>
-<p>第一次检出项目后，需要下载依赖</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn install</span><br></pre></td></tr></table></figure>
-
-<p>该命令会下载所需要的依赖，第一次会很慢，预计6分钟</p>
-<h2 id="6、项目启动"><a href="#6、项目启动" class="headerlink" title="6、项目启动"></a>6、项目启动</h2><p>在项目根目录输入命令：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn run serve</span><br></pre></td></tr></table></figure>
-
-<p>启动成功</p>
-<p><img src="https://images.weserv.nl/?url=https://qqadapt.qpic.cn/txdocpic/0/59a85ec15a06d7efa0549617f069917e/0" alt=""></p>
+                <p>LOL半年了，一直玩人机！一天我表哥来我家玩LOL，我十分得意的给他说我现在简单人机把把都超神了，牛吧！<br>表哥呵呵一笑问：你现在什么段位了！什么段位？我懵了！段位是什么东西？是说的等级吗？我已经三十级满级了！<br>表哥得意了:‘’哈哈，段位都不知道，还装NB！我告诉你吧！等级在LOL里并不是评定实力的标准，段位才是，满级满大街都是！像你这种人机称帝的只能算入门级的！只有进入段位界进入青铜领域才能算得上是一名正式的撸者！而青铜领域又细分为五级，五级最次，一级最强！只有成为撸者，才能算是一名合格的召唤师！<br>‘哦！我恍然大悟，原来老子还不是一个合格的召唤师！那表哥你是什么级别的！’’我问。<br>表哥一听露出傲然的表情，吐出一个烟圈故作平谈的说道：青铜三级撸者！我一听，顿时震惊，因为我玩了半年简单人机就最近几天才做到把把超神，但在表哥看来我才入门，连那个什么撸者都不是！看来表哥说的那个青铜领域里面肯定全是高手！！！但我表面上却没有表现出什么。<br>表哥却以为我不以为意急忙解释：‘’你别看我才三级，我告诉你，段位可没这么好上，没有悟性青铜领域都进不了！更别想进其它领域了！其它领域？难道一级青铜还不是最强？表哥呵呵一笑：‘井底之蛙了吧，告诉你，青铜领域之上便是召唤师梦寐以求的白银领域，青铜和白银之间有一道无法逾越的鸿沟，如果说青铜领域的召唤师算是高手，那么进入白银才能算是一方强者，而白银强者又有一个专属称号:撸师！有九层九的撸者终其一生也只能在青铜领域感叹人生！’<br>哦，我震惊了，并迫不急待的问道：白银领域之上还有更强吗？表哥露出痴痴的表情说再那之上便是传说中的存在了！我一听，更急，那到底叫什么？‘’白银之上黄金撸尊！‘’表哥一字一顿道。‘这种级别的强者屈指可数，更无法想像黄金撸尊一念间就能将对面杀成狗，超神超到系统崩溃的境界。看到我的愕然以及眼神中淡淡的不屑，表哥不置可否，或许在表哥眼中我只是一个连战五渣都算不上的小学生吧。看到街边有一个网吧，表哥骄傲的对我说：走，大哥今天带你装逼带你飞。随后我们拿着开好的临时卡以及去厕所放的两瓶水走进网吧。就在我们坐下后，我和表哥迅速登录上账号，在这个时候，突然听到旁边座位上传来的英雄联盟开启的声音。表哥饶有兴趣的看着她的登录界面，虽说这女生不算极品，但在这小地方也能算得颇有姿色，特别是当她盯着屏幕专注的时候，更显几分娇俏。此时表哥脸上全是淡淡的玩味，毕竟青铜三撸者已经能算做这撸坛顶尖般的人物。<br>当表哥开口对这个妹子说：“一起撸吧，美女，包你赢，不赢自切小JJ。”的时候，美女正好点开个人资料。霎时，表哥的脸上满是惊惧，以及发自内心深处的战栗，手中的矿泉水瓶也掉了下来，我正疑惑的时候，表哥嘴中发出那种难以抑制的颤抖生，眼睛死死的盯着旁边美女的屏幕，半分钟后，表哥颤抖的说出：“白金撸圣？”我痴痴的望着表哥！什么是白金撸圣？表哥缓缓的点上一支红塔山，狠狠的吸了一口。<br>面色凝重的对我说道：撸圣只存在于传说中，很久没有人见过是什么样子了！撸尊想进去撸圣莫过于滴水穿石，珠穆朗玛峰移平，太平洋蒸发可想而知他的难度！这是表哥似乎茅塞顿开的望着我，又狠狠地吸了一口红塔山香烟，莫非眼前这个桃之夭夭灼灼其华的女人，背负了命运之力？我问道表哥什么是命运之力？表哥：那是能一神带四坑超NB的存在，以一己之力力挽狂澜，救队友于水火，万军从中取敌将首级的人物！<br>表哥一脸茫然不知所云，但是此时表哥的内心已经做了一个决定，誓死要追随眼前这撸圣女人！这时候，撸圣游戏开始了，我与表哥呆呆的望着屏幕，此时安静极了，表哥上下起伏的呼吸声隐隐约约能听清，仿佛其它多余的事，都是对白金撸圣色不敬！撸圣的威严压迫着我和表哥喘不过气来!时间在滴答，一分一秒的流逝着，不知不觉撸圣蛮三刀已经20个头了，仿佛我听到了她内心的呐喊，我的大刀早已饥渴难耐了！！正当我沉浸在撸圣无情的杀戮中，此时，她与其余四位队友中了埋伏，我和表哥深知，撸圣死了就全完了！<br>下一秒，我内心的涟漪已经澎湃，撸圣开着疾跑，一刀一人头，十步杀一人，千里不留行！！！！屏幕显示着，大伯q，吹波q，娃抓Q，喷她Q！！！这时一句话没说的撸圣霸气的吼了一声，妈蛋，还有谁！！！！我回首，表哥已经泣不成声了，喃喃自语到，此生能见撸圣已经足矣，能看到撸圣大杀四方的神威,后四个字，表哥几乎是用尽全身力气吼了出来：死而无憾！！！！我不知何时眼角已经有了泪痕！心里面早已许下诺言，我人机帝总有一天要与撸圣比肩！这时撸圣回眸看到了我和表哥，表哥闪电般的到了撸圣面前。<br>偶尔也打打排位。经过1年多的不懈努力，终于成功晋级，成为了一名青铜5级撸者。还记得晋级那天表哥来到了我家，专程送了我包辣条祝贺我，我感动得泣不成声。表哥默默的从口袋里拿出一包五牛。抽出一根放入嘴中。我急忙拿出火，为表哥点上。表哥深深吸了一口，拍了拍我的肩膀。“你的路还很远，虽说你今天成功成为一民撸者，但表哥不得不打击你一下”我点了点头说道“表哥我会努力的”“哈哈你表哥我从青铜3撸者晋级为青铜2撸者了”此刻的表哥仿佛散发着耀眼的光芒，亮瞎了我双眼。<br>时代变迁，一代版本一代神 !<br>———— 如今的我踏入撸界已经5年了……<br>这一天，表哥突然拜访我家<br>表哥:“哈哈表弟，五年不见，如今可还踏足撸界?”<br>我装作惊讶:“这是当然，不知道表哥前来何事?”<br>表哥突然大笑起来:“就在三天前，表哥我已经晋级黄金撸尊5!实力大过于五年前!镇长还亲自颁发了荣耀证书!连他儿子都拜倒在我的门下。”<br>我:“黄金撸尊啊？表哥竟然成了如此存在，表弟望尘莫及啊。”此刻我仍在低调，因为我知道，如果我的实力一旦曝光，恐怕当今ZX都会被惊动!<br>表哥装作不在意的样子道:“撸尊不是我的目标，我此生的愿望就是要成为我师父那样的存在!撸圣白金!”<br>我一脸崇拜道:“表哥竟有如此宏愿!表弟实在汗颜!”<br>表哥大手一挥:“这不算什么!表哥现在带你去本省最大的网吧一展身手!听闻哪里有钻石撸帝的存在出没 ! ! ”<br>“撸帝啊!传说一展撸技万人膜拜的顶级存在啊，据说每诞生一位撸帝所在的省市都要引起爆炸大轰动!”<br>表哥带我搭上公交，两个小时后终于到达了本省最大的网吧。表哥拿出一根红塔山说：“我从小道消息听，今天会有钻石撸帝出没，我已经叫了我同学帮我们开好机蹲点了，带你去见识一下！！”于是我跟着表哥进了网吧，一进去，不愧是本省最大的网吧，里面每个人身上都散发出一股强者的气息，更有甚者散发出白金撸圣的霸者气息，我区区撸者身处之中，身体不禁的发起颤栗。忽然，表哥拍了拍我说道：“表弟，别慌，068和069号机子已经开好了，过去吧。”刚走到机子旁边，就看见有个人跟表哥打招呼，表哥说：“他就是我同学，你叫他伟哥就好，他也是黄金撸尊！”我听闻不禁由衷尊敬，忘了应话。伟哥听到后笑着说：“原来你就是表弟呀，你好你好。”表哥打断了他说：“呃，不扯这个，撸帝呢？”说完就四周缓缓观察一番。伟哥答道：“不知道呀，又说今天会来这里打一波晋级赛，到现在都没出现，可能”，话没说话，就听见广播报了一声“欢迎英雄联盟钻石段位的大神光临本网咖，就座100号机”。霎时间整个网吧都安静了下来，静的不可思议连一个按键声都没有，似乎所有的目光都聚焦在100号机子上，都想去围观所谓的撸帝是怎么样的存在！我顶着巨大的威压液相着100号机望去。只见是一个年轻俊俏的少年，目光冷冽，似乎世上一切都不存在，举手投足都似乎能翻山倒海。只见他按下了开机键并缓缓坐下。然后他仰天长啸：“奥利给！！”</p>
 
                 
 
@@ -278,7 +255,7 @@
                     
                     
                         <li class="next">
-                            <a href="/2019/12/12/摸鱼/" data-toggle="tooltip" data-placement="top" title="摸鱼">下一篇 &rarr;</a>
+                            <a href="/2019/12/13/自建项目前端搭建/" data-toggle="tooltip" data-placement="top" title="自建项目前端搭建">下一篇 &rarr;</a>
                         </li>
                     
                 </ul>
@@ -309,6 +286,16 @@
 
                 
 				
+				<!-- Valine start -->
+					<div id="vcomments"></div>
+					<script>
+						new Valine({
+							el: '#vcomments',
+							appId: '2V0ap78xzrtM9BWiRS1SyQ4a-gzGzoHsz',
+							appKey: 'wwgnWUUiRLyLKsTtbDKrGOJw'
+						})
+					</script>
+				
             </div>
 
             <!-- Tabe of Content -->
@@ -328,6 +315,8 @@
                     <h5><a href="/tags/">标签云</a></h5>
                     <div class="tags">
                        
+                          <a class="tag" href="/tags/摸鱼" title="摸鱼">摸鱼</a>
+                        
                     </div>
                 </section>
                 
@@ -539,7 +528,7 @@
 <script>
     // only load tagcloud.js in tag.html
     if ($('#tag_cloud').length !== 0) {
-        async("http://yoursite.com/2019/12/12/%E8%87%AA%E5%BB%BA%E9%A1%B9%E7%9B%AE%E5%89%8D%E7%AB%AF%E6%90%AD%E5%BB%BA/index.html/js/jquery.tagcloud.js", function () {
+        async("http://yoursite.com/2019/12/13/LOL%E6%B8%B8%E8%AE%B0/index.html/js/jquery.tagcloud.js", function () {
             $.fn.tagcloud.defaults = {
                 //size: {start: 1, end: 1, unit: 'em'},
                 color: {
@@ -550,6 +539,53 @@
             $('#tag_cloud a').tagcloud();
         })
     }
+</script>
+
+<script>
+    if (!AV.applicationId) {
+        AV.init({
+            appId: '2V0ap78xzrtM9BWiRS1SyQ4a-gzGzoHsz',
+            appKey: 'wwgnWUUiRLyLKsTtbDKrGOJw'
+        });
+    }
+
+    function createNewCounter() {
+        // 声明一个 Counter 类型
+        var Counter = AV.Object.extend('Counter');
+        // 新建一个 Counter 对象
+        var counter = new Counter();
+        console.log(document.URL);
+        counter.set('title', document.URL);
+        counter.set('counter', 0);
+        counter.save().then(function (counter) {
+            // 成功保存之后，执行其他逻辑.
+            console.log('New object created with objectId: ' + counter.id);
+        }, function (error) {
+            // 异常处理
+            console.error('Failed to create new object, with error message: ' + error.message);
+        });
+    }
+
+    function showPageView() {
+        var query = new AV.Query('Counter');
+        query.equalTo('title', document.URL);
+        query.find().then(function (results) {
+            if (results.length > 0) {
+                var cnt = results[0].get('counter');
+                results[0].increment('counter');
+                results[0].save().then(function (counter) { });
+                document.getElementById('leancounter').innerHTML = '' + (cnt + 1);
+            } else {
+                createNewCounter();
+                document.getElementById('leancounter').innerHTML = 1;
+            }
+        }, function (error) {
+
+            console.error('Failed to find object, with error message: ' + error.message);
+        });
+
+    }
+    showPageView();
 </script>
 
 <!--fastClick.js -->
